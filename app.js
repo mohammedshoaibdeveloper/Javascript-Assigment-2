@@ -429,21 +429,279 @@
 // g.Gross Amount Payable(after Due Date)
 // Where,
 
-document.write("<h1>", "K-Electric Bill", "</h1>", "<br>");
-var customerName = "shoaib";
-var curentMonth = "june";
-var NumberOfUnit = 200;
-var perUnit = 16;
-var amount = 0;
-var lateamount = 200;
+// document.write("<h1>", "K-Electric Bill", "</h1>", "<br>");
+// var customerName = "shoaib";
+// var curentMonth = "june";
+// var NumberOfUnit = 200;
+// var perUnit = 16;
+// var amount = 0;
+// var lateamount = 200;
 
-document.write("CustomerName : ", customerName, "<br>")
-document.write("Month : ", curentMonth, "<br>")
-document.write("Number of Units : ", NumberOfUnit, "<br>")
-document.write("Charge per unit : ", perUnit, "<br><br><br>")
+// document.write("CustomerName : ", customerName, "<br>")
+// document.write("Month : ", curentMonth, "<br>")
+// document.write("Number of Units : ", NumberOfUnit, "<br>")
+// document.write("Charge per unit : ", perUnit, "<br><br><br>")
 
 
 
-document.write("Net Amount payable with due date : ", 200 * 16, "<br>")
-document.write("surcharge : ", lateamount, "<br>")
-document.write("After due date : ", (200 * 16) + 200, "<br>")
+// document.write("Net Amount payable with due date : ", 200 * 16, "<br>")
+// document.write("surcharge : ", lateamount, "<br>")
+// document.write("After due date : ", (200 * 16) + 200, "<br>")
+
+// ch 35-38
+// FUNCTIONS
+
+// 1. Write a function that displays current date & time in your
+// browser
+
+// function date() {
+//     var d = new Date()
+//     document.write(d)
+// }
+// date()
+
+// 2. Write a function that takes first & last name and then it
+// greets the user using his full name.
+
+// function name(a, b) {
+//     var fullname = a + b;
+//     document.write(fullname)
+// }
+
+// name("Mohammed", 'Shoaib');
+
+// 3. Write a function that adds two numbers (input by user)
+// and returns the sum of two numbers.
+// function add() {
+//     var a = +prompt("Enter a firstname");
+//     var b = +prompt("Enter a Lastname");
+
+//     var c = a + b;
+//     document.write(c)
+// }
+
+// add()
+
+// 4. Calculator:
+// Write a function that takes three arguments num1, num2
+// & operator & compute the desired operation. Return and
+// show the desired result in your browser.
+
+// function calculator(number1, operator, number3) {
+
+//     if (operator == "+") {
+//         return number1 + number3;
+//     } else if (operator == "-") {
+//         return number1 - number3;
+//     } else if (operator == "*") {
+//         return number1 * number3;
+//     } else if (operator == "/") {
+//         return number1 / number3;
+//     }
+// }
+
+// var Result = calculator(1, "+", 2)
+// document.write(Result, "<br>")
+
+// var Result = calculator(1, "-", 2)
+// document.write(Result, "<br>")
+
+// var Result = calculator(1, "*", 2)
+// document.write(Result, "<br>")
+
+// var Result = calculator(1, "/", 2)
+// document.write(Result, "<br>")
+
+// 5. Write a function that squares its argument.
+
+// function Square(a) {
+//     return a * a;
+// }
+
+// var result = Square(2);
+// document.write(result)
+
+// 6. Write a function that computes factorial of a number.
+
+// function factorialize(num) {
+//     if (num < 0)
+//         return -1;
+//     else if (num == 0)
+//         return 1;
+//     else {
+//         return (num * factorialize(num - 1));
+//     }
+// }
+// var a = factorialize(5);
+// document.write(a)
+
+// 7. Write a function that take start and end number as inputs
+// & display counting in your browser.
+
+// function count(s, e) {
+//     for (var a = s; a <= e; a++) {
+//         document.write(a, "<br>");
+//     }
+// }
+
+// count(1, 10)
+
+// 8. Write a nested function that computes hypotenuse of a
+// right angle triangle.
+// Hypotenuse2 = Base2 + Perpendicular2
+// Take base and perpendicular as inputs.
+// Outer function : calculateHypotenuse()
+// Inner function: calculateSquare()
+
+// function geometric() {
+//     var base = prompt("Enter a base value");
+//     var perpendicualar = prompt("Enter a perpendicular");
+//     var hyp = base * base + perpendicualar * perpendicualar
+
+//     function square(hyp) {
+
+//         document.write("your hypothenous is ", hyp * hyp)
+//     }
+
+//     square(hyp);
+
+// }
+
+// geometric();
+
+// 9. Write a
+
+// function that calculates the area of a rectangle.
+// A = width * height
+// Pass width and height in following manner:
+//     i.Arguments as value
+// ii.Arguments as variables
+
+// function Area(w, h) {
+
+
+//     return w * h;
+// }
+
+// var height = 4
+// var result = Area(2, height)
+// document.write(result)
+
+// 10. Write a JavaScript function that checks whether a passed
+// string is palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same backward as
+// forward, e.g., madam.
+
+// function reverse() {
+
+//     var a = prompt("Enter a word");
+//     var str = a.split("").reverse().join("");
+
+//     if (str == a) {
+
+//         document.write(str, "<br>");
+//         document.write("word is palidrom");
+//     } else {
+//         document.write(str, "<br>");
+//         document.write("word is not palidrom");
+//     }
+// }
+
+// reverse();
+
+// 11. Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+// function firstLetter() {
+//     var a = prompt("Enter a string");
+//     var b = a.split(" ")
+//     for (var i = 0; i < b.length; i++) {
+
+//         document.write(b[i].charAt(0).toUpperCase() + b[i].substr(1), "<br>")
+//     }
+// }
+
+// firstLetter();
+
+// 12. Write a JavaScript
+// function that accepts a string as a
+// parameter and find the longest word within the string.
+// EXAMPLE STRING: 'Web Development Tutorial'
+// EXPECTED OUTPUT: 'Development'
+
+// function longword(string) {
+
+//     var str = string.split(" ");
+//     var long = 0;
+//     var word = null;
+
+//     for (var i = 0; i < str.length; i++) {
+//         if (long < str[i].length) {
+//             long = str[i].length;
+//             word = str[i];
+//             document.write(word)
+
+//         }
+//     }
+
+// }
+
+// longword("shoaib is good")
+
+// 13. Write a JavaScript function that accepts two arguments, a
+// string and a letter and the function will count the number of 
+// occurrences of the specified letter within the string.
+// Sample arguments : 'JSResourceS.com', 'o'
+
+// function charCount(str, letter) {
+
+//     var len = 0;
+//     for (var i = 0; i < str.length; i++) {
+
+//         if (str.charAt(i) == letter) {
+
+//             len = len + 1;
+
+//         }
+//     }
+//     document.write(len);
+// }
+
+// charCount("shakeeb", "e")
+
+// 14. The Geometrizer
+// Create 2 functions that calculate properties of a circle, using
+// the definitions here.
+// Create a function called calcCircumference:
+// • Pass the radius to the function.
+// • Calculate the circumference based on the radius, and output
+// "The circumference is NN".
+// Create a function called calcArea:
+// • Pass the radius to the function.
+// • Calculate the area based on the radius, and output "The area
+// is NN".
+// Circumference of circle = 2πr
+// Area of circle = πr2
+
+// function Circumference() {
+
+//     var a = prompt("Enter a radious");
+//     var result = 2 * 3.13 * a;
+//     document.write("The circumference is ", result)
+// }
+
+// Circumference();
+
+
+// function AreaCircle() {
+
+//     var a = prompt("Enter a radious");
+//     var result = 3.14 * Math.sqrt(a);
+//     document.write("The Area of circle is ", result)
+
+// }
+
+// AreaCircle();
